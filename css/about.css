@@ -1,0 +1,474 @@
+ /*
+Theme Name:Mark Instruments
+Description: Information Technology (IT) is a field dedicated to the use, development, and management of computer systems and software to process and distribute information. IT plays a crucial role in virtually every industry, facilitating communication, data management, and operational efficiency. Here's a closer look at some key aspects of IT.
+Author: TechTrakker
+Version: 1.0
+*/
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+#header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin: 0 20px;
+    top: 20px;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#header a {
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#header a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 40px);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Categories Styling */
+.category {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid red;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.dropdown {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: none; /* Hide by default */
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 5px 0;
+}
+
+.dropdown a:hover {
+    color: red;
+}
+
+/* Contact Details Section */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-info .fas {
+    margin-right: 10px;
+}
+
+/* Feedback Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+    }
+}
+
+/* Animation */
+#header {
+    animation: fadeIn 2s;
+}
+ 
+.box {
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* GOOGLE MAP *************************************************************************************** */
+
+/* Map Container Styling */
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Zoom Controls Styling */
+#zoom-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#zoom-controls button {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#zoom-controls button:hover {
+    background-color: darkgray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #map-container {
+        height: 400px;
+    }
+
+    #zoom-controls button {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    #map-container {
+        height: 300px;
+    }
+    #header h1{
+        font-size: 20px;
+     }
+     #header a{
+        font-size: 12px;
+        font-weight: bold;
+     }
+
+    #zoom-controls button {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+}
+/* SUBSCRIPTION************************************************************** */
+ /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Subscription Section */
+.subscription-section {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.subscription-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscription-section input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.subscription-section button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscription-section button:hover {
+    background-color: darkred;
+}
+
+.subscription-section p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #555;
+}
+
+/* News & Updates Section */
+.news-updates-section {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.news-update {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-update h3 {
+    margin: 0;
+}
+
+.news-update p {
+    margin: 5px 0;
+}
+
+/* Tags Section */
+.tags-section {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags a {
+    display: block;
+    padding: 10px;
+    border: 1px solid red;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tags a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .subscription-section,
+    .news-updates-section,
+    .tags-section {
+        flex: 1 1 100%;
+    }
+}
+/* Keyframes for Continuous Up and Down Animation */
+@keyframes bounceUpDown {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.7;
+    }
+}
+
+/* Apply Animation to News Update Section */
+.news-update {
+    animation: bounceUpDown 3s ease-in-out infinite;
+}
+
+.news-update h3 {
+    animation: bounceUpDown 3s ease-in-out infinite;
+}
+
+.news-update p {
+    animation: bounceUpDown 3s ease-in-out infinite;
+}
+/* NEXT ANIMATIONS */
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Social Icons Styling */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Increased size for better visibility */
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff; /* White background */
+    color: #f00; /* Red color for icons */
+    font-size: 24px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Animation */
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+    background-color: #f00; /* Red background on hover */
+    color: #fff; /* White icon color on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Animation for Icon Entrance */
+@keyframes iconEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply entrance animation */
+.social-icon {
+    animation: iconEntrance 1s ease-out;
+}
+
+/* Specific Color Styles for Each Icon (optional) */
+.social-icon.facebook {
+    color: #3b5998; /* Facebook color */
+}
+
+.social-icon.instagram {
+    color: #e4405f; /* Instagram color */
+}
+
+.social-icon.twitter {
+    color: #1da1f2; /* Twitter color */
+}
+
+.social-icon.pinterest {
+    color: #bd081c; /* Pinterest color */
+}
